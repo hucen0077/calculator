@@ -8,6 +8,8 @@ trigger:
 
 pool:
   name: az400m05l05a-pool
+  demands:
+  - 'Agent.Name -equals LP-627'
 
 steps:
 - task: NodeTool@0
